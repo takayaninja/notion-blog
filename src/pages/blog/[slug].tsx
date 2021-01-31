@@ -303,8 +303,8 @@ const RenderPost = ({ post, redirect, preview }) => {
                     muted={!isImage}
                     autoPlay={!isImage}
                     style={childStyle}
-                    />
-                    )
+                />
+                )
                 const youtubeId = properties.source[0][0].match(/\?v=([^&]+)/)
                 toRender.push(<YouTube videoId={youtubeId[1]} key={youtubeId[1]} />)
               }
